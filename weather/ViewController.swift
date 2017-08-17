@@ -10,9 +10,16 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+//    @IBOutlet var mapView: MKMapView!
+    
+    
+    @IBOutlet var statusBarOption: NSPopUpButton!
+    @IBOutlet var units: NSSegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+      
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +29,11 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func showPoweredBy(_ sender: Any) {
+        
+    }
+    
+  
 
 }
 
