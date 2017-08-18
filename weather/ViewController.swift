@@ -12,6 +12,9 @@ class ViewController: NSViewController {
 
 //    @IBOutlet var mapView: MKMapView!
     
+    @IBAction func quit(_ sender: Any) {
+        NSApp.terminate(self)
+    }
     
     @IBOutlet var area: NSTextField!
     @IBOutlet var statusBarOption: NSPopUpButton!

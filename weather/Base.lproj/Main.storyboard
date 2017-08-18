@@ -683,7 +683,7 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="XfG-lQ-9wD" customClass="ViewController" customModule="weather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="246" height="158"/>
+                        <rect key="frame" x="0.0" y="0.0" width="246" height="196"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI1-XO-wjg">
@@ -699,14 +699,14 @@
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xGK-Qe-lQl">
                                 <rect key="frame" x="78" y="104" width="136" height="26"/>
-                                <popUpButtonCell key="cell" type="push" title="循环展示" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="-1" imageScaling="proportionallyDown" inset="2" selectedItem="bKo-At-nsg" id="Gmn-8Y-sMp">
+                                <popUpButtonCell key="cell" type="push" title="综合展示" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="kw0-Md-diM" id="Gmn-8Y-sMp">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="s5d-jm-dns">
                                         <items>
-                                            <menuItem title="循环展示" state="on" tag="-1" id="bKo-At-nsg"/>
+                                            <menuItem title="循环展示" tag="-1" id="bKo-At-nsg"/>
                                             <menuItem isSeparatorItem="YES" id="Egu-VX-GTl"/>
-                                            <menuItem title="综合展示" id="kw0-Md-diM"/>
+                                            <menuItem title="综合展示" state="on" id="kw0-Md-diM"/>
                                             <menuItem isSeparatorItem="YES" id="Xnr-QP-iAN"/>
                                             <menuItem title="展示温度" tag="1" id="OGi-1B-frb">
                                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -721,8 +721,8 @@
                                     </menu>
                                 </popUpButtonCell>
                             </popUpButton>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0m-bh-Cnc">
-                                <rect key="frame" x="1" y="74" width="71" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0m-bh-Cnc">
+                                <rect key="frame" x="1" y="72" width="71" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="气温单位" id="v4n-Qv-d5x">
                                     <font key="font" size="13" name=".PingFangSC-Regular"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -739,26 +739,8 @@
                                     </segments>
                                 </segmentedCell>
                             </segmentedControl>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhi-T7-OOA">
-                                <rect key="frame" x="9" y="141" width="58" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您的位置" id="kY9-0B-bD6">
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiF-jU-bad">
-                                <rect key="frame" x="78" y="141" width="124" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="获取中" id="59j-lb-2CL">
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFi-WO-NAy">
-                                <rect key="frame" x="74" y="0.0" width="169" height="32"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PFi-WO-NAy">
+                                <rect key="frame" x="81" y="13" width="169" height="32"/>
                                 <buttonCell key="cell" type="push" title="Powered by Dark Sky" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cXa-Ki-fhT">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -767,6 +749,35 @@
                                     <action selector="showPoweredBy:" target="XfG-lQ-9wD" id="L53-7h-kOU"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhi-T7-OOA">
+                                <rect key="frame" x="9" y="151" width="58" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="您的位置" id="kY9-0B-bD6">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f6M-UD-fmL">
+                                <rect key="frame" x="5" y="13" width="66" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b7K-P2-lcs">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="quit:" target="XfG-lQ-9wD" id="ElB-xt-tjs"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiF-jU-bad">
+                                <rect key="frame" x="78" y="151" width="124" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="获取中" id="59j-lb-2CL">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="TI1-XO-wjg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="3" id="0Lw-Ai-Ozk"/>
@@ -775,7 +786,7 @@
                             <constraint firstItem="PFi-WO-NAy" firstAttribute="top" secondItem="xGK-Qe-lQl" secondAttribute="bottom" constant="66" id="Bao-Br-kFa"/>
                             <constraint firstItem="TI1-XO-wjg" firstAttribute="leading" secondItem="l0m-bh-Cnc" secondAttribute="leading" id="Ls3-TN-DZH"/>
                             <constraint firstItem="xGK-Qe-lQl" firstAttribute="leading" secondItem="sHx-Ye-jy6" secondAttribute="leading" id="Obg-Jc-Etc"/>
-                            <constraint firstItem="xGK-Qe-lQl" firstAttribute="trailing" secondItem="PFi-WO-NAy" secondAttribute="trailing" id="Psv-db-wb0"/>
+                            <constraint firstItem="xGK-Qe-lQl" firstAttribute="trailing" secondItem="PFi-WO-NAy" secondAttribute="trailing" constant="-33" id="Psv-db-wb0"/>
                             <constraint firstItem="l0m-bh-Cnc" firstAttribute="centerY" secondItem="sHx-Ye-jy6" secondAttribute="centerY" id="aAy-bB-j2M"/>
                             <constraint firstItem="TI1-XO-wjg" firstAttribute="baseline" secondItem="xGK-Qe-lQl" secondAttribute="baseline" id="bRE-A4-eme"/>
                             <constraint firstAttribute="bottom" secondItem="PFi-WO-NAy" secondAttribute="bottom" constant="20" symbolic="YES" id="cgZ-rk-a1u"/>
@@ -791,7 +802,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-124" y="707"/>
+            <point key="canvasLocation" x="-124" y="727"/>
         </scene>
     </scenes>
 </document>
