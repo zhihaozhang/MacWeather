@@ -117,7 +117,12 @@ class AppDelegate: NSObject, NSApplicationDelegate,CLLocationManagerDelegate {
             if userDefault.integer(forKey: "units") == 0 {
                 
                 dataSource += "?units=si"
+                dataSource += "&lang=zh"
+            }else{
+                dataSource += "?lang=zh"
             }
+            
+            
             
             //2
             guard let url = URL(string: dataSource) else { return }
